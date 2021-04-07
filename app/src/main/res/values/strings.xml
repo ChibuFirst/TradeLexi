@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">TradeLexi</string>
+    <string name="message1">Connect with the right \nsource</string>
+    <string name="message_info1">With Tradelexi will connect you with the right \nsource, that will deliver your work perfectly</string>
+    <string name="message2">Lorem ipsum dolor sit \namet</string>
+    <string name="message_info2">Lorem ipsum dolor sit amet, consectetur adipiscing \nelit. Dictum pretium, egestas duis fermentum. \nQuisque viverra etiam mattis.</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="get_started">Get Started</string>
+    <string name="sign_up_as">Sign up as..</string>
+    <string name="client">Client</string>
+    <string name="service_provider">Service Provider</string>
+    <string name="already_have_an_account">Already have an account?</string>
+    <string name="log_in">Log in</string>
+    <string name="log_in_as">Log in as..</string>
+    <string name="don_t_have_an_account_yet">Don’t have an account yet?</string>
+    <string name="sign_up">Sign up</string>
 </resources>
