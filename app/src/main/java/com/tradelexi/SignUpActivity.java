@@ -18,15 +18,15 @@ public class SignUpActivity extends AppCompatActivity {
         binding = ActivitySignUpBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.buttonClient.setOnClickListener(view -> showToast("Calm down!"));
-        binding.buttonServiceProvider.setOnClickListener(view -> showToast("Your blood dey hot oh!"));
+        binding.buttonClient.setOnClickListener(view -> {
+            startActivity(new Intent(SignUpActivity.this, ClientSignUpActivity.class));
+        });
+        binding.buttonServiceProvider.setOnClickListener(view -> {
+            startActivity(new Intent(SignUpActivity.this, SpSignUpActivity.class));
+        });
         binding.linearLogin.setOnClickListener(view -> {
             startActivity(new Intent(SignUpActivity.this, LoginActivity.class));
             SignUpActivity.this.finish();
         });
-    }
-
-    private void showToast(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 }

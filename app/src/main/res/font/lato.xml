@@ -2,26 +2,26 @@
 <font-family xmlns:android="http://schemas.android.com/apk/res/android">
     <font
         android:font="@font/lato_regular"
-        android:fontWeight="400"
-        android:fontStyle="normal" />
+        android:fontStyle="normal"
+        android:fontWeight="400" />
     <font
         android:font="@font/lato_bold"
-        android:fontWeight="600"
-        android:fontStyle="normal" />
+        android:fontStyle="normal"
+        android:fontWeight="600" />
     <font
         android:font="@font/lato_black"
-        android:fontWeight="800"
-        android:fontStyle="normal" />
+        android:fontStyle="normal"
+        android:fontWeight="800" />
     <font
         android:font="@font/lato_italic"
-        android:fontWeight="400"
-        android:fontStyle="italic" />
+        android:fontStyle="italic"
+        android:fontWeight="400" />
     <font
         android:font="@font/lato_bold_italic"
-        android:fontWeight="600"
-        android:fontStyle="italic" />
+        android:fontStyle="italic"
+        android:fontWeight="600" />
     <font
         android:font="@font/lato_black_italic"
-        android:fontWeight="800"
-        android:fontStyle="italic" />
+        android:fontStyle="italic"
+        android:fontWeight="800" />
 </font-family>

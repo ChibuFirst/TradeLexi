@@ -19,7 +19,6 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:text="@string/message1"
-        android:textFontWeight="800"
         android:textSize="28sp"
         android:textStyle="bold" />
 

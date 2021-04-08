@@ -6,4 +6,5 @@
     <color name="black">#FF000000</color>
     <color name="purple_light">#FF6666CC</color>
     <color name="purple_dark">#FF6200EE</color>
+    <color name="bg_blue">#FF6766CC</color>
 </resources>
