@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.tradelexi">
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +11,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.TradeLexi">
+
+        <activity
+            android:name=".SpLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SpSignUpActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientLoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClientSignUpActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".LoginActivity"
             android:screenOrientation="portrait" />

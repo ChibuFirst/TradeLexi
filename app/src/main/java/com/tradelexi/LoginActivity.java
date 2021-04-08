@@ -18,15 +18,15 @@ public class LoginActivity extends AppCompatActivity {
         binding = ActivityLoginBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        binding.buttonClient.setOnClickListener(view -> showToast("Nawa for you!"));
-        binding.buttonServiceProvider.setOnClickListener(view -> showToast("I no go talk again!"));
+        binding.buttonClient.setOnClickListener(view -> {
+            startActivity(new Intent(LoginActivity.this, ClientLoginActivity.class));
+        });
+        binding.buttonServiceProvider.setOnClickListener(view -> {
+            startActivity(new Intent(LoginActivity.this, SpLoginActivity.class));
+        });
         binding.linearSignUp.setOnClickListener(view -> {
             startActivity(new Intent(LoginActivity.this, SignUpActivity.class));
             LoginActivity.this.finish();
         });
-    }
-
-    private void showToast(String msg) {
-        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
     }
 }
