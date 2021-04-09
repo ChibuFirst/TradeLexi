@@ -9,6 +9,7 @@ import android.os.Vibrator;
 
 import com.google.android.material.textfield.TextInputLayout;
 import com.tradelexi.databinding.ActivitySpLoginBinding;
+import com.tradelexi.sp.AccountSetupActivity;
 import com.tradelexi.util.FunctionUtil;
 import com.tradelexi.util.InputValidation;
 
@@ -46,7 +47,7 @@ public class SpLoginActivity extends AppCompatActivity {
         } else if (binding.textInputPassword.getEditText().getText().toString().trim().isEmpty()) {
             handleErrors(binding.textInputPassword, getString(R.string.error_field_required));
         } else {
-            func.displaySnackBar(binding.getRoot(), "You're good to go!");
+            startActivity(new Intent(SpLoginActivity.this, AccountSetupActivity.class));
         }
     }
 

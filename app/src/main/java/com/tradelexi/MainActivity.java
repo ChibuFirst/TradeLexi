@@ -8,6 +8,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Looper;
+import android.view.animation.AnimationUtils;
+
+import com.tradelexi.databinding.ActivityMainBinding;
 import com.tradelexi.onboarding.OnboardingActivity;
 import com.tradelexi.util.Constants;
 
@@ -16,7 +19,11 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        ActivityMainBinding binding = ActivityMainBinding.inflate(getLayoutInflater());
+        setContentView(binding.getRoot());
+
+        binding.imageLogo.startAnimation(AnimationUtils.loadAnimation(this, R.anim.slide_down));
+        binding.textSlogan.startAnimation(AnimationUtils.loadAnimation(this, R.anim.zoom_in));
 
         new Handler(Looper.getMainLooper()).postDelayed(() -> {
             SharedPreferences preferences = getSharedPreferences(Constants.SHARED_PREF_NAME, Context.MODE_PRIVATE);
@@ -24,9 +31,9 @@ public class MainActivity extends AppCompatActivity {
             if (isFirstTime) {
                 startActivity(new Intent(this, OnboardingActivity.class));
             } else {
-                startActivity(new Intent(this, SignUpActivity.class));
+                startActivity(new Intent(this, LoginActivity.class));
             }
             MainActivity.this.finish();
-        }, 1500);
+        }, 2500);
     }
 }
