@@ -7,4 +7,6 @@
     <color name="purple_light">#FF6666CC</color>
     <color name="purple_dark">#FF6200EE</color>
     <color name="bg_blue">#FF6766CC</color>
+    <color name="green">#FF62B145</color>
+    <color name="gray_dark">#FFB4B4B4</color>
 </resources>

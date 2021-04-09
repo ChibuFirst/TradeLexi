@@ -1,9 +1,11 @@
 <resources>
     <string name="app_name">TradeLexi</string>
-    <string name="message1">Connect with the right \nsource</string>
-    <string name="message_info1">With Tradelexi will connect you with the right \nsource, that will deliver your work perfectly</string>
-    <string name="message2">Lorem ipsum dolor sit \namet</string>
-    <string name="message_info2">Lorem ipsum dolor sit amet, consectetur adipiscing \nelit. Dictum pretium, egestas duis fermentum. \nQuisque viverra etiam mattis.</string>
+    <string name="message1">Connect with the right source</string>
+    <string name="message_info1">With Tradelexi, we connect you with the right source that will deliver your work perfectly</string>
+    <string name="message2">Get quality and reliable service</string>
+    <string name="message_info2">Enjoy a hitch free experience</string>
+    <string name="message3">Grow your business network</string>
+    <string name="message_info3">Show your skills to the world</string>
     <string name="skip">Skip</string>
     <string name="next">Next</string>
     <string name="get_started">Get Started</string>
@@ -29,4 +31,132 @@
     <string name="error_invalid_email">Invalid email address.</string>
     <string name="error_password_length">At least 6 characters needed.</string>
     <string name="error_password_mismatch">Password does not match.</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="hi_fejiro_set_up_your_account">Hi ChibuFirst, set up your account</string>
+    <string name="add_a_picture_of_you">Add a picture of you</string>
+    <string name="choose">Choose</string>
+    <string name="pro_tip">Pro tip: Adding a clear picture of you will increase \ncustomer trust.</string>
+    <string name="back">Back</string>
+    <string name="let_s_know_you">Let’s know you!</string>
+    <string name="fill_in_your_personal_details">Fill in your personal details</string>
+    <string name="gender">Gender:</string>
+    <string name="date_of_birth">Date of Birth:</string>
+    <string name="state">State:</string>
+    <string name="business_address">Business Address:</string>
+    <string name="say_a_little_about_yourself">Say a little about yourself:</string>
+    <string name="add_a_valid_means_of_identification">Add a valid means of Identification</string>
+    <string name="select_a_preferred_means_of_identification">Select a preferred means of \nidentification</string>
+    <string name="voter_s_card">Voter\'s Card</string>
+    <string name="national_id_card">National ID Card</string>
+    <string name="drivers_license">Drivers\' License</string>
+    <string name="upload">Upload</string>
+    <string name="verification_of_details_would_take_3_5_days">Verification of details would take 3–5 days.</string>
+    <string name="we_are_committed_to_providing_our_customers_with_quality_services">We are committed to providing our customers with quality services.</string>
+    <string name="do_you_have_any_certifications_nit_will_increase_customer_trust">Do you have any certifications? \nIt will increase customer trust!</string>
+    <string name="ttc">Trade Test certificate</string>
+    <string name="cac">CAC (Tax Identification Number)</string>
+    <string name="sme">SMEDANe</string>
+    <string name="what_can_you_do">What can you do?</string>
+    <string name="type_in_the_service_you_are_willing_to_nrender">Type in the service you are willing to \nrender.</string>
+    <string name="e_g_electrical_work_baking">E.g, Electrical work, Baking</string>
+    <string name="catalog_portfolio">Catalog/Portfolio</string>
+    <string name="showcase_your_work">Showcase your work.</string>
+    <string name="select_pictures_from_gallery">Select pictures from gallery</string>
+    <string name="pro_tip_upload_up_to_4_pictures_for_best_results">Pro tip: Upload up to 4 pictures for best results</string>
+    <string name="rates">Rates</string>
+    <string name="how_much_do_you_charge">How much do you charge?</string>
+    <string name="pro_tip_rate">Pro tip: Place reasonable prices, so as not to scare away potential clients.</string>
+    <string name="service">Service:</string>
+    <string name="price_range">Price range:</string>
+    <string name="service_hint">E.g, Pumping tires, making a dress</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="select_a_subscription_plan">Select a Subscription plan.</string>
+    <string name="choose_a_plan_that_fits_your_budget">Choose a plan that fits your budget.</string>
+    <string name="choose_a_payment_option">Choose a payment option.</string>
+    <string name="select_a_preferred_payment_option">Select a preferred payment option.</string>
+    <string name="you_re_all_set">You’re all set!</string>
+    <string name="tradelexi_slogan">Your one-stop shop for in-person services</string>
+    <string name="zero">0</string>
+    <string name="tradelexi_regular">Tradelexi Regular</string>
+    <string name="current_plan">Current Plan</string>
+    <string name="text_regular_info">Profile will be created but won’t be visible to public until subscription to Standard or Regular plans is confirmed</string>
+    <string name="tradelexi_standard">Tradelexi Standard</string>
+    <string name="three_thousand">&#8358;3,000</string>
+    <string name="seven_thousand"><strike>&#8358;7,000</strike></string>
+    <string name="tradelexi_standard_info1">Free for the first two weeks &#9679; See an respond to clients.</string>
+    <string name="try_for_1_month_free">Try for 1 month free</string>
+    <string name="tradelexi_standard_info2">*Get all the benefits of a Standard plan for 1 month, then ₦3,000 per month</string>
+    <string name="tradelexi_premium">Tradelexi Premium</string>
+    <string name="five_thousand">&#8358;5,000</string>
+    <string name="ten_thousand"><strike>&#8358;10,000</strike></string>
+    <string name="tradelexi_premium_info1">Free for the first two weeks &#9679; See an respond to clients &#9679; Get recommended to clients &#9679; Unlimited gigs per month</string>
+    <string name="tradelexi_premium_info2">*Get all the benefits of a Premium plan for 1 month, then ₦5,000 per month</string>
+    <string name="bank_transfer">Bank Transfer</string>
+    <string name="zeros">0000000000</string>
+    <string name="kuda_microfinance_bank">Kuda Bank</string>
+    <string name="credit_or_debit_card">Credit or Debit Card</string>
+    <string name="xxx">XXXX XXXX XXXX XXXXX</string>
+    <string name="mm_yy">MM / YY</string>
+    <string name="xx">XXX</string>
+    <string name="card_info">*Using a card gets you 10% off!</string>
+    <string name="save_card">Save Card</string>
+    <string name="we_will_never_share_your_details">* We will never share your details.</string>
+
+    <string-array name="months">
+        <item>MM</item>
+        <item>January</item>
+        <item>February</item>
+        <item>March</item>
+        <item>April</item>
+        <item>May</item>
+        <item>June</item>
+        <item>July</item>
+        <item>August</item>
+        <item>September</item>
+        <item>October</item>
+        <item>November</item>
+        <item>December</item>
+    </string-array>
+
+    <string-array name="states">
+        <item>Select state</item>
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Akwa Ibom</item>
+        <item>Anambra</item>
+        <item>Bauchi</item>
+        <item>Beyelsa</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
+        <item>Enugu</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+        <item>FCT Abuja</item>
+    </string-array>
 </resources>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/account_setup_nav_graph"
+    app:startDestination="@id/firstSetupFragment">
+
+    <fragment
+        android:id="@+id/firstSetupFragment"
+        android:name="com.tradelexi.sp.FirstSetupFragment"
+        android:label="fragment_first_setup"
+        tools:layout="@layout/fragment_first_setup">
+        <action
+            android:id="@+id/action_firstSetupFragment_to_secondSetupFragment"
+            app:destination="@id/secondSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondSetupFragment"
+        android:name="com.tradelexi.sp.SecondSetupFragment"
+        android:label="fragment_second_setup"
+        tools:layout="@layout/fragment_second_setup">
+        <action
+            android:id="@+id/action_secondSetupFragment_to_firstSetupFragment"
+            app:destination="@id/firstSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+        <action
+            android:id="@+id/action_secondSetupFragment_to_thirdSetupFragment"
+            app:destination="@id/thirdSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdSetupFragment"
+        android:name="com.tradelexi.sp.ThirdSetupFragment"
+        android:label="fragment_third_setup"
+        tools:layout="@layout/fragment_third_setup">
+        <action
+            android:id="@+id/action_thirdSetupFragment_to_secondSetupFragment"
+            app:destination="@id/secondSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+        <action
+            android:id="@+id/action_thirdSetupFragment_to_fourthSetupFragment"
+            app:destination="@id/fourthSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/fourthSetupFragment"
+        android:name="com.tradelexi.sp.FourthSetupFragment"
+        android:label="fragment_fourth_setup"
+        tools:layout="@layout/fragment_fourth_setup">
+        <action
+            android:id="@+id/action_fourthSetupFragment_to_thirdSetupFragment"
+            app:destination="@id/thirdSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+        <action
+            android:id="@+id/action_fourthSetupFragment_to_fifthSetupFragment"
+            app:destination="@id/fifthSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/fifthSetupFragment"
+        android:name="com.tradelexi.sp.FifthSetupFragment"
+        android:label="fragment_fifth_setup"
+        tools:layout="@layout/fragment_fifth_setup">
+        <action
+            android:id="@+id/action_fifthSetupFragment_to_fourthSetupFragment"
+            app:destination="@id/fourthSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+        <action
+            android:id="@+id/action_fifthSetupFragment_to_sixthSetupFragment"
+            app:destination="@id/sixthSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/sixthSetupFragment"
+        android:name="com.tradelexi.sp.SixthSetupFragment"
+        android:label="fragment_sixth_setup"
+        tools:layout="@layout/fragment_sixth_setup">
+        <action
+            android:id="@+id/action_sixthSetupFragment_to_fifthSetupFragment"
+            app:destination="@id/fifthSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+        <action
+            android:id="@+id/action_sixthSetupFragment_to_seventhSetupFragment"
+            app:destination="@id/seventhSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/seventhSetupFragment"
+        android:name="com.tradelexi.sp.SeventhSetupFragment"
+        android:label="fragment_seventh_setup"
+        tools:layout="@layout/fragment_seventh_setup">
+        <action
+            android:id="@+id/action_seventhSetupFragment_to_sixthSetupFragment"
+            app:destination="@id/sixthSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+        <action
+            android:id="@+id/action_seventhSetupFragment_to_subscriptionFragment"
+            app:destination="@id/subscriptionFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/subscriptionFragment"
+        android:name="com.tradelexi.sp.SubscriptionFragment"
+        android:label="fragment_subscription"
+        tools:layout="@layout/fragment_subscription">
+        <action
+            android:id="@+id/action_subscriptionFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+        <action
+            android:id="@+id/action_subscriptionFragment_to_seventhSetupFragment"
+            app:destination="@id/seventhSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.tradelexi.sp.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment">
+        <action
+            android:id="@+id/action_paymentFragment_to_confirmationFragment"
+            app:destination="@id/confirmationFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/confirmationFragment"
+        android:name="com.tradelexi.sp.ConfirmationFragment"
+        android:label="fragment_confirmation"
+        tools:layout="@layout/fragment_confirmation"></fragment>
+</navigation>

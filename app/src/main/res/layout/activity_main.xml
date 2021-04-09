@@ -1,21 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/bg_blue"
-    android:padding="16dp"
+    android:background="@drawable/ic_onboarding"
+    android:padding="30dp"
+    android:orientation="vertical"
+    android:gravity="center"
     tools:context=".MainActivity">
 
     <ImageView
+        android:id="@+id/image_logo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/tradelexi"
-        android:contentDescription="@string/app_name"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:src="@drawable/logo"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:contentDescription="@string/app_name" />
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/text_slogan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tradelexi_slogan"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:textColor="@color/blue" />
+
+</LinearLayout>

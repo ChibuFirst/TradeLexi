@@ -12,6 +12,8 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TradeLexi">
 
+        <activity android:name=".sp.AccountSetupActivity"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".SpLoginActivity"
             android:screenOrientation="portrait" />
