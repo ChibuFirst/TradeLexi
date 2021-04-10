@@ -57,7 +57,8 @@ public class SpSignUpActivity extends AppCompatActivity {
         } else if (!binding.textInputPassword.getEditText().getText().toString().equals(binding.textInputConfirmPassword.getEditText().getText().toString())) {
             handleErrors(binding.textInputConfirmPassword, getString(R.string.error_password_mismatch));
         } else {
-            func.displaySnackBar(binding.getRoot(), "Inputs validated! You are good to go!");
+            startActivity(new Intent(this, SpLoginActivity.class));
+            finish();
         }
     }
 

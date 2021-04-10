@@ -48,6 +48,7 @@ public class SpLoginActivity extends AppCompatActivity {
             handleErrors(binding.textInputPassword, getString(R.string.error_field_required));
         } else {
             startActivity(new Intent(SpLoginActivity.this, AccountSetupActivity.class));
+            SpLoginActivity.this.finish();
         }
     }
 

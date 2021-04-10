@@ -103,6 +103,67 @@
     <string name="card_info">*Using a card gets you 10% off!</string>
     <string name="save_card">Save Card</string>
     <string name="we_will_never_share_your_details">* We will never share your details.</string>
+    <string name="home">Home</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="welcome_chibufirst">Welcome ChibuFirst</string>
+    <string name="search_for_service_providers">Search for service providers</string>
+    <string name="categories">Categories</string>
+    <string name="hair_care">Hair care</string>
+    <string name="electrical_amp_mechanical_stuff"><![CDATA[Electrical & Mechanical stuff]]></string>
+    <string name="drycleaning_amp_house_keeping"><![CDATA[Drycleaning & House keeping]]></string>
+    <string name="male_female_fashion">Male/Female Fashion</string>
+    <string name="handy_work">Handy Work</string>
+    <string name="home_tutoring">Home Tutoring</string>
+    <string name="food_catering_services">Food/Catering services</string>
+    <string name="digital_services">Digital services</string>
+    <string name="top_providers">Top providers:</string>
+    <string name="godfirst">Godfirst</string>
+    <string name="onuoha">Onuoha</string>
+    <string name="caterer">Caterer</string>
+    <string name="_5_0">5.0</string>
+    <string name="your_profile">Your Profile</string>
+    <string name="imo_state">Imo State</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="update_email">Update Email</string>
+    <string name="change_password">Change password</string>
+    <string name="register_as_service_provider">Register as Service Provider</string>
+    <string name="delete_account">Delete account</string>
+    <string name="contact_us">Contact us</string>
+    <string name="help_center">Help Center</string>
+    <string name="search_results">Search Results</string>
+    <string name="photography">Photography</string>
+    <string name="male_fashion">Male Fashion</string>
+    <string name="catering">Catering</string>
+    <string name="dry_cleaning">Dry cleaning</string>
+    <string name="filters">Filters</string>
+    <string name="reset">Reset</string>
+    <string name="barbing">Barbing</string>
+    <string name="filter_by">Filter by</string>
+    <string name="price_8358">Price (₦)</string>
+    <string name="proximity_miles">Proximity (Miles)</string>
+    <string name="done">Done</string>
+    <string name="from">From</string>
+    <string name="to">To</string>
+    <string name="photographer">Photographer</string>
+    <string name="_4_5">4.5</string>
+    <string name="_30_reviews">(30 reviews)</string>
+    <string name="whatsapp">WhatsApp</string>
+    <string name="call">Call</string>
+    <string name="vendor_address">Lagos, Nigeria, 40 miles away from you</string>
+    <string name="total_no_of_jobs">Total no. of jobs</string>
+    <string name="_38">38</string>
+    <string name="jobs_completed">Jobs completed</string>
+    <string name="_37">37</string>
+    <string name="description">Description</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sapien eu eget quisque tellus aliquet lectus purus, etiam. Id quam pretium aliquam leo blandit ipsum magna. Senectus fames quisque ultrices eget sed. Natoque mauris enim parturient dolor eu semper. Tellus fusce lorem viverra tortor dolor nunc leo sed.</string>
+    <string name="portfolio">Portfolio</string>
+    <string name="services_offered">Services offered</string>
+    <string name="people_who_viewed_this_photographer_also_viewed">People who viewed this Photographer also viewed</string>
+    <string name="godfirst_s_reviews">Godfirst\'s Reviews</string>
+    <string name="anonymous">Anonymous</string>
+    <string name="_12_days_ago">12 days ago</string>
+    <string name="lorem_small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet.</string>
 
     <string-array name="months">
         <item>MM</item>
@@ -128,6 +189,7 @@
         <item>Anambra</item>
         <item>Bauchi</item>
         <item>Beyelsa</item>
+        <item>Benue</item>
         <item>Borno</item>
         <item>Cross River</item>
         <item>Delta</item>
@@ -158,5 +220,61 @@
         <item>Yobe</item>
         <item>Zamfara</item>
         <item>FCT Abuja</item>
+    </string-array>
+
+    <string-array name="location">
+        <item>Location</item>
+        <item>Abia</item>
+        <item>Adamawa</item>
+        <item>Akwa Ibom</item>
+        <item>Anambra</item>
+        <item>Bauchi</item>
+        <item>Beyelsa</item>
+        <item>Benue</item>
+        <item>Borno</item>
+        <item>Cross River</item>
+        <item>Delta</item>
+        <item>Ebonyi</item>
+        <item>Edo</item>
+        <item>Ekiti</item>
+        <item>Enugu</item>
+        <item>Gombe</item>
+        <item>Imo</item>
+        <item>Jigawa</item>
+        <item>Kaduna</item>
+        <item>Kano</item>
+        <item>Katsina</item>
+        <item>Kebbi</item>
+        <item>Kogi</item>
+        <item>Kwara</item>
+        <item>Lagos</item>
+        <item>Nasarawa</item>
+        <item>Niger</item>
+        <item>Ogun</item>
+        <item>Ondo</item>
+        <item>Osun</item>
+        <item>Oyo</item>
+        <item>Plateau</item>
+        <item>Rivers</item>
+        <item>Sokoto</item>
+        <item>Taraba</item>
+        <item>Yobe</item>
+        <item>Zamfara</item>
+        <item>FCT Abuja</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>Gender</item>
+        <item>Male</item>
+        <item>Female</item>
+    </string-array>
+
+    <string-array name="rating">
+        <item>Rating</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
     </string-array>
 </resources>
