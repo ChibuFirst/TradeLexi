@@ -12,7 +12,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TradeLexi">
 
-        <activity android:name=".sp.AccountSetupActivity"
+        <activity
+            android:name=".client.ClientActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".sp.AccountSetupActivity"
             android:screenOrientation="portrait" />
         <activity
             android:name=".SpLoginActivity"

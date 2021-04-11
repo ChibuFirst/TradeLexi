@@ -8,6 +8,7 @@ import android.os.Vibrator;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.textfield.TextInputLayout;
+import com.tradelexi.client.ClientActivity;
 import com.tradelexi.databinding.ActivityClientLoginBinding;
 import com.tradelexi.util.FunctionUtil;
 import com.tradelexi.util.InputValidation;
@@ -42,7 +43,8 @@ public class ClientLoginActivity extends AppCompatActivity {
         } else if (binding.textInputPassword.getEditText().getText().toString().trim().isEmpty()) {
             handleErrors(binding.textInputPassword, getString(R.string.error_field_required));
         } else {
-            func.displaySnackBar(binding.getRoot(), "You're good to go!");
+            startActivity(new Intent(this, ClientActivity.class));
+            finish();
         }
     }
 

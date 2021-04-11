@@ -3,6 +3,7 @@ package com.tradelexi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
 import android.util.Patterns;
@@ -51,7 +52,8 @@ public class ClientSignUpActivity extends AppCompatActivity {
         } else if (!binding.textInputPassword.getEditText().getText().toString().equals(binding.textInputConfirmPassword.getEditText().getText().toString())) {
             handleErrors(binding.textInputConfirmPassword, getString(R.string.error_password_mismatch));
         } else {
-            func.displaySnackBar(binding.getRoot(), "Inputs validated! You are good to go!");
+            startActivity(new Intent(this, ClientLoginActivity.class));
+            finish();
         }
     }
 
