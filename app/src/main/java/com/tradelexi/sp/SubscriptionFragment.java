@@ -30,7 +30,7 @@ public class SubscriptionFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonBack.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_subscriptionFragment_to_seventhSetupFragment));
+        binding.buttonBack.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_subscriptionFragment_to_eighthSetupFragment));
         binding.buttonNext.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_subscriptionFragment_to_paymentFragment));
     }
 

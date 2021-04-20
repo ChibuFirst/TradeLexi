@@ -1,45 +1,35 @@
 package com.tradelexi;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Vibrator;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import com.google.android.material.textfield.TextInputLayout;
 import com.tradelexi.client.ClientActivity;
-import com.tradelexi.databinding.ActivityClientLoginBinding;
+import com.tradelexi.databinding.ActivityForgotPasswordBinding;
 import com.tradelexi.util.FunctionUtil;
 import com.tradelexi.util.InputValidation;
 
-public class ClientLoginActivity extends AppCompatActivity {
+public class ForgotPasswordActivity extends AppCompatActivity {
 
-    private ActivityClientLoginBinding binding;
+    private ActivityForgotPasswordBinding binding;
     private Vibrator vibrator;
     private FunctionUtil func;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        binding = ActivityClientLoginBinding.inflate(getLayoutInflater());
+        binding = ActivityForgotPasswordBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
         vibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
         func = new FunctionUtil();
 
         binding.textInputEmail.getEditText().addTextChangedListener(new InputValidation(binding.textInputEmail));
-        binding.textInputPassword.getEditText().addTextChangedListener(new InputValidation(binding.textInputPassword));
-        binding.buttonLogin.setOnClickListener(view -> validateInput());
-        binding.textForgotPassword.setOnClickListener(view -> {
-            startActivity(new Intent(ClientLoginActivity.this, ForgotPasswordActivity.class));
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-        });
-        binding.textSignUp.setOnClickListener(view -> {
-            startActivity(new Intent(ClientLoginActivity.this, ClientSignUpActivity.class));
-            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
-            ClientLoginActivity.this.finish();
-        });
+        binding.buttonReset.setOnClickListener(view -> validateInput());
     }
 
     private void validateInput() {
@@ -48,11 +38,10 @@ public class ClientLoginActivity extends AppCompatActivity {
             handleErrors(binding.textInputEmail, getString(R.string.error_field_required));
         } else if (!binding.textInputEmail.getEditText().getText().toString().trim().matches(emailPattern)) {
             handleErrors(binding.textInputEmail, getString(R.string.error_invalid_email));
-        } else if (binding.textInputPassword.getEditText().getText().toString().trim().isEmpty()) {
-            handleErrors(binding.textInputPassword, getString(R.string.error_field_required));
         } else {
-            startActivity(new Intent(this, ClientActivity.class));
-            finish();
+            func.displaySnackBar(binding.getRoot(), "Ready to send password reset link.");
+            /*startActivity(new Intent(this, LoginActivity.class));
+            finish();*/
         }
     }
 

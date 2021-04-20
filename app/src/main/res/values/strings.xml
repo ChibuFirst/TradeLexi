@@ -164,6 +164,12 @@
     <string name="anonymous">Anonymous</string>
     <string name="_12_days_ago">12 days ago</string>
     <string name="lorem_small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet.</string>
+    <string name="phone_number">Phone number:</string>
+    <string name="add_a_guarantor">Add a guarantor</string>
+    <string name="surety_contact">Enter the contact of a person who could surety you</string>
+    <string name="add">Add</string>
+    <string name="reset_your_password">Reset your password</string>
+    <string name="enter_the_email_address_used_to_open_the_account">Enter the email address used to open the account</string>
 
     <string-array name="months">
         <item>MM</item>

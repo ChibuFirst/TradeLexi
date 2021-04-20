@@ -6,23 +6,32 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.FragmentNavigator;
+import androidx.transition.Transition;
+import androidx.transition.TransitionInflater;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.AutoCompleteTextView;
 
 import com.tradelexi.R;
 import com.tradelexi.databinding.FragmentSecondSetupBinding;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 public class SecondSetupFragment extends Fragment {
 
     private FragmentSecondSetupBinding binding;
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Transition transition = TransitionInflater.from(requireContext()).inflateTransition(android.R.transition.move);
+        setSharedElementEnterTransition(transition);
+        setSharedElementReturnTransition(transition);
+    }
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -54,8 +63,14 @@ public class SecondSetupFragment extends Fragment {
         yearAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         binding.spinnerYear.setAdapter(yearAdapter);
 
-        binding.buttonBack.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_secondSetupFragment_to_firstSetupFragment));
-        binding.buttonNext.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_secondSetupFragment_to_thirdSetupFragment));
+        FragmentNavigator.Extras extras1 = new FragmentNavigator.Extras.Builder()
+                .addSharedElement(binding.imageProgress, "progress1")
+                .build();
+        FragmentNavigator.Extras extras2 = new FragmentNavigator.Extras.Builder()
+                .addSharedElement(binding.imageProgress, "progress3")
+                .build();
+        binding.buttonBack.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_secondSetupFragment_to_firstSetupFragment, null, null, extras1));
+        binding.buttonNext.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_secondSetupFragment_to_thirdSetupFragment, null, null, extras2));
     }
 
     @Override

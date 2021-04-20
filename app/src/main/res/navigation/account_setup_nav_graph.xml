@@ -13,11 +13,7 @@
         <action
             android:id="@+id/action_firstSetupFragment_to_secondSetupFragment"
             app:destination="@id/secondSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popUpTo="@id/account_setup_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/secondSetupFragment"
@@ -27,19 +23,11 @@
         <action
             android:id="@+id/action_secondSetupFragment_to_firstSetupFragment"
             app:destination="@id/firstSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left" />
+            app:popUpTo="@id/account_setup_nav_graph" />
         <action
             android:id="@+id/action_secondSetupFragment_to_thirdSetupFragment"
             app:destination="@id/thirdSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popUpTo="@id/account_setup_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/thirdSetupFragment"
@@ -49,19 +37,11 @@
         <action
             android:id="@+id/action_thirdSetupFragment_to_secondSetupFragment"
             app:destination="@id/secondSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left" />
+            app:popUpTo="@id/account_setup_nav_graph" />
         <action
             android:id="@+id/action_thirdSetupFragment_to_fourthSetupFragment"
             app:destination="@id/fourthSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popUpTo="@id/account_setup_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/fourthSetupFragment"
@@ -71,19 +51,11 @@
         <action
             android:id="@+id/action_fourthSetupFragment_to_thirdSetupFragment"
             app:destination="@id/thirdSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left" />
+            app:popUpTo="@id/account_setup_nav_graph" />
         <action
             android:id="@+id/action_fourthSetupFragment_to_fifthSetupFragment"
             app:destination="@id/fifthSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popUpTo="@id/account_setup_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/fifthSetupFragment"
@@ -93,19 +65,11 @@
         <action
             android:id="@+id/action_fifthSetupFragment_to_fourthSetupFragment"
             app:destination="@id/fourthSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left" />
+            app:popUpTo="@id/account_setup_nav_graph"  />
         <action
             android:id="@+id/action_fifthSetupFragment_to_sixthSetupFragment"
             app:destination="@id/sixthSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popUpTo="@id/account_setup_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/sixthSetupFragment"
@@ -115,19 +79,11 @@
         <action
             android:id="@+id/action_sixthSetupFragment_to_fifthSetupFragment"
             app:destination="@id/fifthSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left" />
+            app:popUpTo="@id/account_setup_nav_graph" />
         <action
             android:id="@+id/action_sixthSetupFragment_to_seventhSetupFragment"
             app:destination="@id/seventhSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popUpTo="@id/account_setup_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/seventhSetupFragment"
@@ -137,19 +93,25 @@
         <action
             android:id="@+id/action_seventhSetupFragment_to_sixthSetupFragment"
             app:destination="@id/sixthSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left" />
+            app:popUpTo="@id/account_setup_nav_graph" />
         <action
-            android:id="@+id/action_seventhSetupFragment_to_subscriptionFragment"
+            android:id="@+id/action_seventhSetupFragment_to_eighthSetupFragment"
+            app:destination="@id/eighthSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+    </fragment>
+    <fragment
+        android:id="@+id/eighthSetupFragment"
+        android:name="com.tradelexi.sp.EighthSetupFragment"
+        android:label="fragment_eighth_setup"
+        tools:layout="@layout/fragment_eighth_setup">
+        <action
+            android:id="@+id/action_eighthSetupFragment_to_seventhSetupFragment"
+            app:destination="@id/seventhSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
+        <action
+            android:id="@+id/action_eighthSetupFragment_to_subscriptionFragment"
             app:destination="@id/subscriptionFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popUpTo="@id/account_setup_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/subscriptionFragment"
@@ -159,19 +121,11 @@
         <action
             android:id="@+id/action_subscriptionFragment_to_paymentFragment"
             app:destination="@id/paymentFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popUpTo="@id/account_setup_nav_graph" />
         <action
-            android:id="@+id/action_subscriptionFragment_to_seventhSetupFragment"
-            app:destination="@id/seventhSetupFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_left"
-            app:exitAnim="@anim/slide_out_right"
-            app:popEnterAnim="@anim/slide_in_right"
-            app:popExitAnim="@anim/slide_in_left" />
+            android:id="@+id/action_subscriptionFragment_to_eighthSetupFragment"
+            app:destination="@id/eighthSetupFragment"
+            app:popUpTo="@id/account_setup_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/paymentFragment"
@@ -181,11 +135,7 @@
         <action
             android:id="@+id/action_paymentFragment_to_confirmationFragment"
             app:destination="@id/confirmationFragment"
-            app:popUpTo="@id/account_setup_nav_graph"
-            app:enterAnim="@anim/slide_in_right"
-            app:exitAnim="@anim/slide_out_left"
-            app:popEnterAnim="@anim/slide_in_left"
-            app:popExitAnim="@anim/slide_out_right" />
+            app:popUpTo="@id/account_setup_nav_graph" />
     </fragment>
     <fragment
         android:id="@+id/confirmationFragment"

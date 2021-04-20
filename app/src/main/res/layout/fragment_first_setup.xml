@@ -27,33 +27,51 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/add_a_picture_of_you"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_account" />
 
-    <ImageView
-        android:id="@+id/image_account"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginTop="24dp"
-        android:importantForAccessibility="no"
-        android:src="@drawable/ic_account_circle"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_picture" />
-
-    <Button
-        android:id="@+id/button_choose"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
-        android:backgroundTint="@color/bg_blue"
-        android:text="@string/choose"
-        android:textAllCaps="false"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toTopOf="@id/image_progress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/image_account" />
+        app:layout_constraintTop_toBottomOf="@id/text_picture">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/image_account"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:importantForAccessibility="no"
+                android:src="@drawable/ic_account_circle"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/button_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:backgroundTint="@color/bg_blue"
+                android:text="@string/choose"
+                android:textAllCaps="false"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/image_account" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
 
     <TextView
         android:id="@+id/text_pro_tip"
@@ -75,6 +93,7 @@
         android:layout_marginBottom="16dp"
         android:importantForAccessibility="no"
         android:src="@drawable/progress1"
+        android:transitionName="progress1"
         app:layout_constraintBottom_toTopOf="@id/button_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

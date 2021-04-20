@@ -27,101 +27,353 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
         android:text="@string/how_much_do_you_charge"
+        android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_details" />
 
-    <TextView
-        android:id="@+id/service_text"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/service"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/edit_service" />
-
-    <EditText
-        android:id="@+id/edit_service"
+    <ScrollView
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="28dp"
-        android:layout_marginTop="16dp"
-        android:autofillHints="@string/service"
-        android:background="@drawable/border"
-        android:hint="@string/service_hint"
-        android:inputType="text|textCapWords"
-        android:paddingStart="8dp"
-        android:paddingEnd="4dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/service_text"
-        app:layout_constraintTop_toBottomOf="@id/text_service" />
-
-    <TextView
-        android:id="@+id/text_price_range"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="@string/price_range"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/price" />
-
-    <LinearLayout
-        android:id="@+id/price"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:gravity="center"
-        android:weightSum="100"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@id/edit_service"
-        app:layout_constraintTop_toBottomOf="@id/edit_service">
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="45"
-            android:autofillHints="@string/price_range"
-            android:background="@drawable/border"
-            android:drawableStart="@drawable/naira"
-            android:drawablePadding="4dp"
-            android:hint="@string/zero"
-            android:inputType="number"
-            android:paddingStart="8dp"
-            android:paddingEnd="4dp" />
-
-        <ImageView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="10"
-            android:importantForAccessibility="no"
-            android:paddingStart="4dp"
-            android:paddingEnd="4dp"
-            android:src="@drawable/line" />
-
-        <EditText
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="45"
-            android:autofillHints="@string/price_range"
-            android:background="@drawable/border"
-            android:drawableStart="@drawable/naira"
-            android:drawablePadding="4dp"
-            android:hint="@string/zero"
-            android:inputType="number"
-            android:paddingStart="8dp"
-            android:paddingEnd="4dp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_height="0dp"
         android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
-        android:text="@string/pro_tip_rate"
+        android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@id/image_progress"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_service">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/service_text1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/edit_service1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/edit_service1" />
+
+                <EditText
+                    android:id="@+id/edit_service1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:autofillHints="@string/service"
+                    android:background="@drawable/border"
+                    android:hint="@string/service_hint"
+                    android:inputType="text|textCapWords"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/price1"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/text_price_range1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_range"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/price1"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/price1" />
+
+                <LinearLayout
+                    android:id="@+id/price1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/text_price_range1"
+                    app:layout_constraintTop_toBottomOf="@id/edit_service1">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="45"
+                        android:autofillHints="@string/price_range"
+                        android:background="@drawable/border"
+                        android:drawableStart="@drawable/naira"
+                        android:drawablePadding="4dp"
+                        android:hint="@string/zero"
+                        android:inputType="number"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="4dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:importantForAccessibility="no"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:src="@drawable/line" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="45"
+                        android:autofillHints="@string/price_range"
+                        android:background="@drawable/border"
+                        android:drawableStart="@drawable/naira"
+                        android:drawablePadding="4dp"
+                        android:hint="@string/zero"
+                        android:inputType="number"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="4dp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="24dp"
+                    android:background="@color/gray_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/service_text2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/edit_service2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/edit_service2" />
+
+                <EditText
+                    android:id="@+id/edit_service2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:autofillHints="@string/service"
+                    android:background="@drawable/border"
+                    android:hint="@string/service_hint"
+                    android:inputType="text|textCapWords"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/price2"
+                    app:layout_constraintTop_toBottomOf="@id/view1" />
+
+                <TextView
+                    android:id="@+id/text_price_range2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_range"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/price2"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/price2" />
+
+                <LinearLayout
+                    android:id="@+id/price2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/text_price_range2"
+                    app:layout_constraintTop_toBottomOf="@id/edit_service2">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="45"
+                        android:autofillHints="@string/price_range"
+                        android:background="@drawable/border"
+                        android:drawableStart="@drawable/naira"
+                        android:drawablePadding="4dp"
+                        android:hint="@string/zero"
+                        android:inputType="number"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="4dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:importantForAccessibility="no"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:src="@drawable/line" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="45"
+                        android:autofillHints="@string/price_range"
+                        android:background="@drawable/border"
+                        android:drawableStart="@drawable/naira"
+                        android:drawablePadding="4dp"
+                        android:hint="@string/zero"
+                        android:inputType="number"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="4dp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraint2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <View
+                    android:id="@+id/view2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="24dp"
+                    android:background="@color/gray_dark"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/service_text3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/service"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/edit_service3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/edit_service3" />
+
+                <EditText
+                    android:id="@+id/edit_service3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:autofillHints="@string/service"
+                    android:background="@drawable/border"
+                    android:hint="@string/service_hint"
+                    android:inputType="text|textCapWords"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="@id/price3"
+                    app:layout_constraintTop_toBottomOf="@id/view2" />
+
+                <TextView
+                    android:id="@+id/text_price_range3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_range"
+                    android:textColor="@color/black"
+                    app:layout_constraintBottom_toBottomOf="@id/price3"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/price3" />
+
+                <LinearLayout
+                    android:id="@+id/price3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:weightSum="100"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/text_price_range3"
+                    app:layout_constraintTop_toBottomOf="@id/edit_service3">
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="45"
+                        android:autofillHints="@string/price_range"
+                        android:background="@drawable/border"
+                        android:drawableStart="@drawable/naira"
+                        android:drawablePadding="4dp"
+                        android:hint="@string/zero"
+                        android:inputType="number"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="4dp" />
+
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:importantForAccessibility="no"
+                        android:paddingStart="4dp"
+                        android:paddingEnd="4dp"
+                        android:src="@drawable/line" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="45"
+                        android:autofillHints="@string/price_range"
+                        android:background="@drawable/border"
+                        android:drawableStart="@drawable/naira"
+                        android:drawablePadding="4dp"
+                        android:hint="@string/zero"
+                        android:inputType="number"
+                        android:paddingStart="8dp"
+                        android:paddingEnd="4dp" />
+
+                </LinearLayout>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <Button
+                android:id="@+id/button_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:backgroundTint="@color/bg_blue"
+                android:text="@string/add"
+                android:textAllCaps="false" />
+
+            <Button
+                android:id="@+id/button_add2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                android:visibility="gone"
+                android:backgroundTint="@color/bg_blue"
+                android:text="@string/add"
+                android:textAllCaps="false" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/pro_tip_rate" />
+
+        </LinearLayout>
+
+    </ScrollView>
 
     <ImageView
         android:id="@+id/image_progress"
@@ -133,6 +385,7 @@
         android:layout_marginBottom="16dp"
         android:importantForAccessibility="no"
         android:src="@drawable/progress7"
+        android:transitionName="progress7"
         app:layout_constraintBottom_toTopOf="@id/button_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

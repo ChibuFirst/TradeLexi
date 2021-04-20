@@ -6,6 +6,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
+import androidx.navigation.fragment.FragmentNavigator;
+import androidx.transition.Transition;
+import androidx.transition.TransitionInflater;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -19,6 +22,14 @@ public class FirstSetupFragment extends Fragment {
     private FragmentFirstSetupBinding binding;
 
     @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Transition transition = TransitionInflater.from(requireContext()).inflateTransition(android.R.transition.move);
+        setSharedElementEnterTransition(transition);
+        setSharedElementReturnTransition(transition);
+    }
+
+    @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
@@ -29,8 +40,10 @@ public class FirstSetupFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-
-        binding.buttonNext.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_firstSetupFragment_to_secondSetupFragment));
+        FragmentNavigator.Extras extras = new FragmentNavigator.Extras.Builder()
+                .addSharedElement(binding.imageProgress, "progress2")
+                .build();
+        binding.buttonNext.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_firstSetupFragment_to_secondSetupFragment, null, null, extras));
     }
 
     @Override
