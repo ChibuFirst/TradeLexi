@@ -4,15 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/ic_setup_bg_4"
+    android:background="@drawable/ic_setup_bg_6"
     android:padding="20dp"
-    tools:context=".sp.FourthSetupFragment">
+    tools:context=".sp.EighthSetupFragment">
 
     <TextView
         android:id="@+id/text_details"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/we_are_committed_to_providing_our_customers_with_quality_services"
+        android:text="@string/add_a_guarantor"
         android:textAlignment="center"
         android:textColor="@color/blue"
         android:textSize="25sp"
@@ -22,12 +22,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/text_means"
+        android:id="@+id/text_service"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="24dp"
-        android:text="@string/do_you_have_any_certifications_nit_will_increase_customer_trust"
-        android:textAlignment="center"
+        android:text="@string/surety_contact"
         android:textColor="@color/black"
         android:textSize="18sp"
         android:textStyle="bold"
@@ -37,78 +36,103 @@
     <ScrollView
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:layout_marginBottom="16dp"
         android:scrollbars="none"
         app:layout_constraintBottom_toTopOf="@id/image_progress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text_means">
+        app:layout_constraintTop_toBottomOf="@id/text_service">
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <RadioGroup
-                android:id="@+id/certification_options"
+            <TextView
+                android:id="@+id/name_text"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
+                android:text="@string/full_name"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/edit_name"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent">
+                app:layout_constraintTop_toTopOf="@id/edit_name" />
 
-                <RadioButton
-                    android:id="@+id/trade_test"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/ttc" />
-
-                <RadioButton
-                    android:id="@+id/cac"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/cac" />
-
-                <RadioButton
-                    android:id="@+id/sme"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/sme" />
-
-            </RadioGroup>
-
-            <Button
-                android:id="@+id/button_upload"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="32dp"
-                android:layout_marginTop="8dp"
-                android:layout_marginEnd="32dp"
-                android:backgroundTint="@color/bg_blue"
-                android:text="@string/upload"
-                android:textAllCaps="false"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/certification_options" />
-
-            <ImageView
-                android:id="@+id/image_preview"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/edit_name"
+                android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
-                android:importantForAccessibility="no"
-                android:src="@drawable/preview"
+                android:autofillHints="@string/service"
+                android:background="@drawable/border"
+                android:inputType="text|textCapWords"
+                android:paddingStart="8dp"
+                android:paddingEnd="4dp"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/edit_phone"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/phone_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/edit_phone"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/button_upload" />
+                app:layout_constraintTop_toTopOf="@id/edit_phone" />
+
+            <EditText
+                android:id="@+id/edit_phone"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:autofillHints="@string/service"
+                android:background="@drawable/border"
+                android:inputType="phone"
+                android:paddingStart="8dp"
+                android:paddingEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/phone_text"
+                app:layout_constraintTop_toBottomOf="@id/edit_name"
+                tools:ignore="LabelFor" />
+
+            <TextView
+                android:id="@+id/email_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/email_address"
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toBottomOf="@id/edit_email"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/edit_email" />
+
+            <EditText
+                android:id="@+id/edit_email"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:autofillHints="@string/service"
+                android:background="@drawable/border"
+                android:inputType="textEmailAddress"
+                android:paddingStart="8dp"
+                android:paddingEnd="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/edit_phone"
+                app:layout_constraintTop_toBottomOf="@id/edit_phone"
+                tools:ignore="LabelFor" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
                 android:text="@string/verification_of_details_would_take_3_5_days"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edit_email" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -123,8 +147,8 @@
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="16dp"
         android:importantForAccessibility="no"
-        android:src="@drawable/progress4"
-        android:transitionName="progress4"
+        android:src="@drawable/progress8"
+        android:transitionName="progress8"
         app:layout_constraintBottom_toTopOf="@id/button_next"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />

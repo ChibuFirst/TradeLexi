@@ -32,6 +32,11 @@ public class ClientSignUpActivity extends AppCompatActivity {
         binding.textInputEmail.getEditText().addTextChangedListener(new InputValidation(binding.textInputEmail));
         binding.textInputPassword.getEditText().addTextChangedListener(new InputValidation(binding.textInputPassword));
         binding.textInputConfirmPassword.getEditText().addTextChangedListener(new InputValidation(binding.textInputConfirmPassword));
+        binding.linearLogin.setOnClickListener(view -> {
+            startActivity(new Intent(ClientSignUpActivity.this, ClientLoginActivity.class));
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+            ClientSignUpActivity.this.finish();
+        });
         binding.buttonSignUp.setOnClickListener(view -> validateInputs());
     }
 

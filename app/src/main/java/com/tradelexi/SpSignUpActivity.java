@@ -34,6 +34,7 @@ public class SpSignUpActivity extends AppCompatActivity {
 
         binding.linearLogin.setOnClickListener(view -> {
             startActivity(new Intent(SpSignUpActivity.this, SpLoginActivity.class));
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             SpSignUpActivity.this.finish();
         });
 

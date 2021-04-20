@@ -30,10 +30,15 @@ public class SpLoginActivity extends AppCompatActivity {
 
         binding.textInputEmail.getEditText().addTextChangedListener(new InputValidation(binding.textInputEmail));
         binding.textInputPassword.getEditText().addTextChangedListener(new InputValidation(binding.textInputPassword));
+        binding.textForgotPassword.setOnClickListener(view -> {
+            startActivity(new Intent(SpLoginActivity.this, ForgotPasswordActivity.class));
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
+        });
         binding.buttonLogin.setOnClickListener(view -> validateInput());
 
         binding.linearSignUp.setOnClickListener(view -> {
             startActivity(new Intent(SpLoginActivity.this, SpSignUpActivity.class));
+            overridePendingTransition(android.R.anim.fade_in, android.R.anim.fade_out);
             SpLoginActivity.this.finish();
         });
     }

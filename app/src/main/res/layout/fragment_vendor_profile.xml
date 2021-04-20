@@ -97,39 +97,58 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="8dp">
 
-                <Button
+                <LinearLayout
                     android:id="@+id/button_whatsapp"
-                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    style="@style/Widget.MaterialComponents.Button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="8dp"
-                    android:backgroundTint="@color/green"
-                    android:text="@string/whatsapp"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    app:icon="@drawable/ic_whatsapp"
-                    app:iconGravity="end"
-                    app:iconTint="@color/white"
+                    android:background="@color/green"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="8dp"
                     app:layout_constraintEnd_toStartOf="@id/button_call"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent">
 
-                <Button
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="16dp"
+                        android:gravity="center"
+                        android:text="@string/whatsapp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/ic_whatsapp" />
+
+                </LinearLayout>
+
+                <LinearLayout
                     android:id="@+id/button_call"
-                    style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+                    style="@style/Widget.MaterialComponents.Button"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
-                    android:backgroundTint="@color/blue"
-                    android:text="@string/call"
-                    android:textAllCaps="false"
-                    android:textColor="@color/white"
-                    app:icon="@drawable/ic_call"
-                    app:iconGravity="end"
-                    app:iconTint="@color/white"
+                    android:background="@color/blue"
+                    android:orientation="horizontal"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toEndOf="@id/button_whatsapp"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawablePadding="16dp"
+                        android:gravity="center"
+                        android:text="@string/call"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
+                        app:drawableEndCompat="@drawable/ic_call"
+                        app:drawableTint="@color/white" />
+
+                </LinearLayout>
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

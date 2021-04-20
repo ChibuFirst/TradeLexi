@@ -90,6 +90,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="4dp"
                         android:text="@string/hair_care"
                         android:textStyle="bold" />
@@ -113,6 +114,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="4dp"
                         android:text="@string/electrical_amp_mechanical_stuff"
                         android:textStyle="bold" />
@@ -145,6 +147,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="4dp"
                         android:text="@string/drycleaning_amp_house_keeping"
                         android:textStyle="bold" />
@@ -168,6 +171,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="4dp"
                         android:text="@string/male_female_fashion"
                         android:textStyle="bold" />
@@ -200,6 +204,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="4dp"
                         android:text="@string/handy_work"
                         android:textStyle="bold" />
@@ -223,6 +228,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="4dp"
                         android:text="@string/home_tutoring"
                         android:textStyle="bold" />
@@ -255,6 +261,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="4dp"
                         android:text="@string/food_catering_services"
                         android:textStyle="bold" />
@@ -278,6 +285,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
                         android:layout_marginTop="4dp"
                         android:text="@string/digital_services"
                         android:textStyle="bold" />

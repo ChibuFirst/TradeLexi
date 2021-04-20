@@ -15,11 +15,11 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.tradelexi.R;
-import com.tradelexi.databinding.FragmentFifthSetupBinding;
+import com.tradelexi.databinding.FragmentEighthSetupBinding;
 
-public class FifthSetupFragment extends Fragment {
+public class EighthSetupFragment extends Fragment {
 
-    private FragmentFifthSetupBinding binding;
+    private FragmentEighthSetupBinding binding;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class FifthSetupFragment extends Fragment {
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        binding = FragmentFifthSetupBinding.inflate(inflater, container, false);
+        binding = FragmentEighthSetupBinding.inflate(inflater, container, false);
         return binding.getRoot();
     }
 
@@ -41,14 +41,11 @@ public class FifthSetupFragment extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        FragmentNavigator.Extras extras1 = new FragmentNavigator.Extras.Builder()
-                .addSharedElement(binding.imageProgress, "progress4")
+        FragmentNavigator.Extras extras = new FragmentNavigator.Extras.Builder()
+                .addSharedElement(binding.imageProgress, "progress7")
                 .build();
-        FragmentNavigator.Extras extras2 = new FragmentNavigator.Extras.Builder()
-                .addSharedElement(binding.imageProgress, "progress6")
-                .build();
-        binding.buttonBack.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_fifthSetupFragment_to_fourthSetupFragment, null, null, extras1));
-        binding.buttonNext.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_fifthSetupFragment_to_sixthSetupFragment, null, null, extras2));
+        binding.buttonBack.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_eighthSetupFragment_to_seventhSetupFragment, null, null, extras));
+        binding.buttonNext.setOnClickListener(v -> Navigation.findNavController(v).navigate(R.id.action_eighthSetupFragment_to_subscriptionFragment));
     }
 
     @Override
