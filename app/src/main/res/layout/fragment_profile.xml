@@ -85,6 +85,7 @@
         android:textStyle="bold" />
 
     <TextView
+        android:id="@+id/text_update_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -100,6 +101,7 @@
         app:drawableTint="@color/black" />
 
     <TextView
+        android:id="@+id/text_change_password"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawablePadding="8dp"
@@ -111,6 +113,21 @@
         android:text="@string/change_password"
         android:textColor="@color/black"
         app:drawableStartCompat="@drawable/ic_change_password"
+        app:drawableTint="@color/black" />
+
+    <TextView
+        android:id="@+id/text_delete_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawablePadding="8dp"
+        android:gravity="center"
+        android:paddingStart="0dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp"
+        android:text="@string/delete_account"
+        android:textColor="@color/blue"
+        app:drawableStartCompat="@drawable/ic_delete"
         app:drawableTint="@color/black" />
 
     <TextView
@@ -127,21 +144,6 @@
         app:drawableStartCompat="@drawable/ic_reg"
         app:drawableTint="@color/black" />
 
-    <TextView
-        android:id="@+id/text_delete"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:drawablePadding="8dp"
-        android:gravity="center"
-        android:paddingStart="0dp"
-        android:paddingTop="8dp"
-        android:paddingEnd="16dp"
-        android:paddingBottom="8dp"
-        android:text="@string/delete_account"
-        android:textColor="@color/blue"
-        app:drawableStartCompat="@drawable/ic_delete"
-        app:drawableTint="@color/black" />
-
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
@@ -150,6 +152,7 @@
         android:background="@color/orange" />
 
     <TextView
+        android:id="@+id/text_contact_us"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:drawablePadding="8dp"
