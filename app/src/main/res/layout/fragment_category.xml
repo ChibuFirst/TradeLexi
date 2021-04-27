@@ -8,31 +8,41 @@
     android:paddingStart="20dp"
     android:paddingTop="20dp"
     android:paddingEnd="20dp"
-    tools:context=".client.HomeFragment">
+    tools:context=".client.CategoryFragment">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
+            android:id="@+id/text_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
-            android:layout_toStartOf="@id/image_profile"
-            android:text="@string/welcome_chibufirst"
+            android:layout_toStartOf="@id/text_categories"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical"
+            android:paddingStart="0dp"
+            android:paddingTop="4dp"
+            android:paddingEnd="4dp"
+            android:paddingBottom="4dp"
+            android:text="@string/back"
+            android:textColor="@color/black"
+            app:drawableStartCompat="@drawable/ic_arrow" />
+
+        <TextView
+            android:id="@+id/text_categories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/categories"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
-
-        <ImageView
-            android:id="@+id/image_profile"
-            android:layout_width="36dp"
-            android:layout_height="36dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:importantForAccessibility="no"
-            android:src="@drawable/profile_image" />
 
     </RelativeLayout>
 
@@ -50,277 +60,81 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:scrollbars="none">
+        android:scrollbars="none"
+        android:layout_marginTop="10dp">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/categories"
-                android:textColor="@color/orange"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:baselineAligned="false"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:weightSum="100"
+                android:padding="8dp">
 
                 <LinearLayout
-                    android:id="@+id/linear_hair"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginEnd="12dp"
-                    android:layout_weight="1"
+                    android:layout_weight="60"
                     android:orientation="vertical">
 
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:importantForAccessibility="no"
-                        android:src="@drawable/category1"
-                        app:shapeAppearanceOverlay="@style/ImageCorner" />
-
                     <TextView
+                        android:id="@+id/text_category"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
+                        android:layout_marginEnd="16dp"
                         android:text="@string/hair_care"
+                        android:textColor="@color/black"
+                        android:textSize="28sp"
                         android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/button_filters"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:drawableEnd="@drawable/ic_arrow_down"
+                        android:drawableTint="@color/white"
+                        android:text="@string/filters"
+                        android:textAllCaps="false" />
 
                 </LinearLayout>
 
-                <androidx.constraintlayout.widget.ConstraintLayout
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/image_category"
                     android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_weight="1">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/image_category2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:importantForAccessibility="no"
-                        android:src="@drawable/category2"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:shapeAppearanceOverlay="@style/ImageCorner" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="end"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/electrical_amp_mechanical_stuff"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toStartOf="@id/image_category2"
-                        app:layout_constraintTop_toBottomOf="@id/image_category2" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:baselineAligned="false"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="12dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:importantForAccessibility="no"
-                        android:src="@drawable/category3"
-                        app:shapeAppearanceOverlay="@style/ImageCorner" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/drycleaning_amp_house_keeping"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/image_category4"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:importantForAccessibility="no"
-                        android:src="@drawable/category4"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:shapeAppearanceOverlay="@style/ImageCorner" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/male_female_fashion"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toStartOf="@id/image_category4"
-                        app:layout_constraintTop_toBottomOf="@id/image_category4" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:baselineAligned="false"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="12dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:importantForAccessibility="no"
-                        android:src="@drawable/category5"
-                        app:shapeAppearanceOverlay="@style/ImageCorner" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/handy_work"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/image_category6"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:importantForAccessibility="no"
-                        android:src="@drawable/category6"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:shapeAppearanceOverlay="@style/ImageCorner" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/home_tutoring"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toStartOf="@id/image_category6"
-                        app:layout_constraintTop_toBottomOf="@id/image_category6" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
-                android:baselineAligned="false"
-                android:orientation="horizontal">
-
-                <LinearLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="12dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:importantForAccessibility="no"
-                        android:src="@drawable/category7"
-                        app:shapeAppearanceOverlay="@style/ImageCorner" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/food_catering_services"
-                        android:textStyle="bold" />
-
-                </LinearLayout>
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="12dp"
-                    android:layout_weight="1"
-                    android:orientation="vertical">
-
-                    <com.google.android.material.imageview.ShapeableImageView
-                        android:id="@+id/image_category8"
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:importantForAccessibility="no"
-                        android:src="@drawable/category8"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintTop_toTopOf="parent"
-                        app:shapeAppearanceOverlay="@style/ImageCorner" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="4dp"
-                        android:text="@string/digital_services"
-                        android:textStyle="bold"
-                        app:layout_constraintStart_toStartOf="@id/image_category8"
-                        app:layout_constraintTop_toBottomOf="@id/image_category8" />
-
-                </androidx.constraintlayout.widget.ConstraintLayout>
+                    android:layout_height="100dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_weight="40"
+                    android:importantForAccessibility="no"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/category1"
+                    app:shapeAppearanceOverlay="@style/ImageCorner" />
 
             </LinearLayout>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="16dp"
                 android:text="@string/top_providers"
-                android:textColor="@color/orange"
-                android:textSize="20sp"
+                android:textAppearance="@style/TextAppearance.MaterialComponents.Subtitle1"
                 android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/gray_dark" />
 
             <LinearLayout
                 android:id="@+id/linear_vendor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="16dp"
                 android:orientation="vertical">
 
                 <LinearLayout
@@ -615,7 +429,90 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:weightSum="100">
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="50">
+
+                        <ImageView
+                            android:id="@+id/image_providers5"
+                            android:layout_width="52dp"
+                            android:layout_height="wrap_content"
+                            android:importantForAccessibility="no"
+                            android:src="@drawable/blank_photo" />
+
+                        <TextView
+                            android:id="@+id/text_first_name5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="20dp"
+                            android:layout_toEndOf="@id/image_providers5"
+                            android:text="@string/godfirst"
+                            android:textAllCaps="true"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/text_last_name5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/text_first_name5"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toEndOf="@id/image_providers5"
+                            android:text="@string/onuoha"
+                            android:textAllCaps="true" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="40"
+                        android:gravity="center"
+                        android:text="@string/caterer"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="10"
+                        android:orientation="vertical"
+                        android:src="@drawable/star">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/_5_0"
+                            android:textAlignment="center"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            app:drawableTopCompat="@drawable/star" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
             </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:padding="16dp"
+                android:text="@string/see_more"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
 
         </LinearLayout>
 
