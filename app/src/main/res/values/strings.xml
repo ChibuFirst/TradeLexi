@@ -204,6 +204,21 @@
     <string name="contact1">0809 123 4567</string>
     <string name="contact2">0809 789 4321</string>
     <string name="subject">Subject</string>
+    <string name="occupation">Photographer</string>
+    <string name="statistics">Statistics</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="manage_jobs">Manage Jobs</string>
+    <string name="manage_subscription">Manage Subscription</string>
+    <string name="samuel">Samuel</string>
+    <string name="oyekoya">Oyekoya</string>
+    <string name="ogun_state">Ogun State</string>
+    <string name="fourtysix_jobs_completed">46</string>
+    <string name="jobs">jobs</string>
+    <string name="profile_views">Profile views</string>
+    <string name="hundredandtwo_total_views">102</string>
+    <string name="total_views">total views</string>
+    <string name="rating">Rating</string>
+    <string name="five">5</string>
 
     <string-array name="months">
         <item>MM</item>
